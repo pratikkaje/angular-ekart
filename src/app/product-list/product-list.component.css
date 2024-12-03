@@ -1,0 +1,13 @@
+.ekart--product--container{
+    padding: 10px 30px;
+}
+
+img{
+    max-width: 150px;
+    max-height: 250px;
+    border-radius: 10px;
+}
+
+button{
+    padding: 5px 10px;
+}
