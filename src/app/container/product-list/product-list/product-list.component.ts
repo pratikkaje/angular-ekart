@@ -225,37 +225,6 @@ export class ProductListComponent {
       slug: "nike-renew-run"
     },
     {
-      id: 15,
-      name: "Beck",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      brand: "HUSHPUPPIES",
-      gender: "MEN",
-      category: "FORMAL",
-      size: [6, 7, 8, 9, 10],
-      color: ["White", "Blue", "Black", "Brown", "Red"],
-      price: 80,
-      discountPrice:45,
-      is_in_inventory: true,
-      items_left: 5,
-      imageURL: "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/Beck-Black_800x800.jpg",
-      slug: "beck"
-    },
-    {
-      id: 17,
-      name: "Fester",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      brand: "HUSHPUPPIES",
-      gender: "MEN",
-      category: "FORMAL",
-      size: [6, 7, 8, 9, 10, 11, 12],
-      color: ["White", "Blue", "Black"],
-      price: 70,
-      is_in_inventory: true,
-      items_left: 6,
-      imageURL: "https://cdn.shopify.com/s/files/1/0016/0074/9623/products/fester-Tan_800x800.jpg?v=1575537531",
-      slug: "fester"
-    },
-    {
       id: 25,
       name: "SS-PM-0093",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
