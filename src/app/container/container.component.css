@@ -1,11 +1,6 @@
 .ekart--product--container{
-    padding: 10px 30px;
-}
-
-img{
-    max-width: 150px;
-    max-height: 250px;
-    border-radius: 10px;
+    margin: 20px auto;
+    padding: 0px 20vh;
 }
 
 button{
