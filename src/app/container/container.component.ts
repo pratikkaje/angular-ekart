@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-container',
@@ -14,6 +14,12 @@ export class ContainerComponent {
     discount: 8.5,
     instock: 10,
     pImage: "/assets/images/iPhone.jpg"
+  }
+
+  searchText : string = '';
+
+  setSearchText(value){
+    this.searchText = value;
   }
 
   getDiscountedPrice(){
