@@ -3,10 +3,13 @@
 </app-filter>
 
 <div class="ekart--products--container">
-    <div *ngFor="let product of products" (click)="selectedProduct = product">
-        <app-product [product]="product" *ngIf="(searchText === '' || product.name.toLowerCase().includes(searchText.toLowerCase())) 
-        && 
-        (selectedFilterRadioButton === 'all' || product.is_in_inventory.toString() === selectedFilterRadioButton)">
+    <ng-container *ngFor="let product of products">
+        <app-product 
+            [product]="product" 
+            *ngIf="(searchText === '' || product.name.toLowerCase().includes(searchText.toLowerCase())) 
+            && 
+            (selectedFilterRadioButton === 'all' || product.is_in_inventory.toString() === selectedFilterRadioButton)"
+            (click)="selectedProduct = product">
         </app-product>
-    </div>
+    </ng-container>
 </div>
