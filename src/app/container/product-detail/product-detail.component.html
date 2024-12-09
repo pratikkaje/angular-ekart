@@ -5,7 +5,7 @@
     <div class="ekart-product-detail-image">
         <img src={{product.imageURL}} class="ekart-product-detail-image">
     </div>
-    
+
     <div class="ekart-product-detail">
         <div class="ekart-product-detail-name">
             <h2>{{product.name}}</h2>
@@ -18,9 +18,12 @@
         <div class="ekart-product-detail-price">
             <p>
                 <b>Price Each Pair:</b>
-                <span [ngStyle]="{backgroundColor: product.discountPrice ? 'red' : 'green', color: 'white'}" *ngIf="product.discountPrice"><s>{{product.price}}</s></span>
-                <span [ngStyle]="{backgroundColor: product.discountPrice ? 'red' : 'green', color: 'white'}" *ngIf="!product.discountPrice">{{product.price}}</span>
-                <span style="background-color: green; color:white" *ngIf="product.discountPrice">{{product.discountPrice}}</span> (Inclusive of all taxes)
+                <span [ngStyle]="{backgroundColor: product.discountPrice ? 'red' : 'green', color: 'white'}"
+                    *ngIf="product.discountPrice"><s>{{product.price}}</s></span>
+                <span [ngStyle]="{backgroundColor: product.discountPrice ? 'red' : 'green', color: 'white'}"
+                    *ngIf="!product.discountPrice">{{product.price}}</span>
+                <span style="background-color: green; color:white"
+                    *ngIf="product.discountPrice">{{product.discountPrice}}</span> (Inclusive of all taxes)
             </p>
         </div>
         <div class="ekart-product-detail-size">
@@ -29,7 +32,7 @@
             </div>
             <div style="margin-top: 20px">
                 <span class="ekart-product-detail-available-size" *ngFor="let size of product.size">{{size}}</span>
-            </div>                
+            </div>
         </div>
 
         <div class="ekart-product-detail-color">
@@ -37,8 +40,9 @@
                 <h4>Available Color</h4>
             </div>
             <diV style="margin-top: 20px;">
-                <span class="ekart-product-detail-available-color" [ngStyle]="{backgroundColor: color}" *ngFor="let color of product.color"></span>
-            </diV>                
+                <span class="ekart-product-detail-available-color" [ngStyle]="{backgroundColor: color}"
+                    *ngFor="let color of product.color"></span>
+            </diV>
         </div>
 
         <div class="ekart-product-detail-desc">
@@ -47,11 +51,14 @@
             </div>
             <div style="margin-top: 20px">
                 <p>{{product.description}}</p>
-            </div>                
+            </div>
         </div>
     </div>
     <div class="ekart-product-detail-addtoCart">
-        <button class="btn-add-to-cart">ADD TO CART</button>
+        <button class="btn-add-to-cart" *ngIf="product.is_in_inventory; else notifyMe">ADD TO CART</button>
+        <ng-template #notifyMe>
+            <button class="btn-add-to-cart">Notify Me</button>
+        </ng-template>
     </div>
 </div>
 <div class="overlay"></div>
